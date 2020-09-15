@@ -1,0 +1,79 @@
+<html>
+<head><title>navigation bar</title>
+
+<link type="text/css" rel="stylesheet" href="nav.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<section>
+<div class="container">
+<div class="main">
+ <div class="logo">
+ <img src="photos/card.jpg">
+ </div>
+ <div class="menu">
+ <ul>
+  <li><a href="#" id="demo">Game type</a><li>
+  <li><a href="#">Situation</a><li>
+  <li><a href="#">Stack size</a><li>
+  </ul>
+  <div class="submenu">
+  <ul>
+  <li>cash game -6max</li>
+   <li>cash game -hj</li>
+    <li><a href="#" id="demo2">tournament-free</a></li>
+	 <li>tournament-full</li>
+  </ul>
+  </div>
+  <div class="sub-menu2">
+  <li>single raised pots</li>
+   <li><a href="#" id="demo1">3-bit</a></li>
+    <li>4-bit</li>
+  
+  </div>
+  <div class="sub-menu3">
+  <li>100-bb</li>
+   <li>80-bb</li>
+    <li>60-bb</li>
+	<li>40-bb</li>
+   <li>30-bb</li>
+    <li>20-bit</li>
+  
+  </div>
+  
+  </div>
+  </div>
+
+</div>
+
+</section>
+<section>
+<div class="container">
+<div class="bg">
+
+</div>
+</div></section>
+
+<script type="text/javascript" >
+$(document).ready(function(){
+  $("#demo").click(function(){
+    $(".submenu").fadeToggle();
+  });
+});
+$(document).ready(function(){
+  $("#demo1").click(function(){
+    $(".sub-menu3").fadeToggle();
+  });
+});
+$(document).ready(function(){
+  $("#demo2").click(function(){
+    $(".sub-menu2").fadeToggle();
+  });
+});
+
+
+</script>
+</body>
+</html>
